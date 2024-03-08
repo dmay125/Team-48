@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Team-48",
+    "url": "https://github.com/dmay125/Team-48.git"
+  },
+  "contributors": [
+    "Daniel May, dmay@umass.edu, dmay125",
+    "Amanda Arcieri, aarcieri@umass.edu, amandaarc",
+    "Sandy Son, sdson@umass.edu, sandydson",
+    "William Cai, wlcai@umass.edu, w1ll14mc41g"
+  ],
+  "scripts": {
+    "dev": "",
+    "test": ""
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}

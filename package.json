@@ -23,9 +23,9 @@
   },
   "contributors": [
     "Daniel May, dmay@umass.edu, dmay125",
-    "Amanda Arcieri, aarcieri@umass.edu, amandaarc",
-    "Sandy Son, sdson@umass.edu, sandydson",
-    "William Cai, wlcai@umass.edu, w1ll14mc41g"
+    "Amanda Arcieri, amandaarc",
+    "Sandy Son, sandydson",
+    "William Cai, w1ll14mc41g"
   ],
   "scripts": {
     "dev": "",

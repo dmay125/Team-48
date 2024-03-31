@@ -1,4 +1,4 @@
-h1 {
+#vision {
     background-color: #1C5F02;
     color: #fff; 
     padding: 20px; 
@@ -101,6 +101,11 @@ nav a:hover{
     background-color: #f1f1f1;
   }
 
+  footer{
+    margin-top: 40px;
+    color:grey;
+    text-align: center;
+  }
 
 
 

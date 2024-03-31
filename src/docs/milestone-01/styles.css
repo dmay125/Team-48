@@ -74,6 +74,9 @@ nav a {
     max-height: 30%;
 }
 
+nav a:hover{
+    color:#0d2b01
+}
 
 
 

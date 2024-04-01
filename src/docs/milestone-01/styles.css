@@ -108,4 +108,13 @@ nav a:hover{
   }
 
 
+.arrow{
+    transform: rotate(90deg);
+    color: #1C5F02;
+    display: inline-block;
+    margin-left: 10px;
+}
 
+.arrow.flipped {
+    transform: rotate(180deg);
+}

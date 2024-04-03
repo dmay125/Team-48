@@ -1,4 +1,4 @@
-h1 {
+#vision {
     background-color: #1C5F02;
     color: #fff; 
     padding: 20px; 
@@ -37,28 +37,28 @@ nav a {
     gap: 20px; 
 }
 
-#member {
+.member {
     background-color: #f0f0f0; 
     padding: 20px; 
     border-radius: 10px; 
     margin-bottom: 20px;
 }
 
-#name {
+.name {
     font-weight: bold; 
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#role {
+.role {
     font-weight: bold; 
     margin-bottom: 10px; 
     margin-top: 20px; 
     text-align: center;
 }
 
-#description {
+.description {
     margin-top: 20px;
     line-height: 1.5; 
 }
@@ -106,6 +106,20 @@ nav a:hover{
     background-color: #f1f1f1;
   }
 
+  footer{
+    margin-top: 40px;
+    color:grey;
+    text-align: center;
+  }
 
 
+.arrow{
+    transform: rotate(90deg);
+    color: #1C5F02;
+    display: inline-block;
+    margin-left: 10px;
+}
 
+.arrow.flipped {
+    transform: rotate(180deg);
+}

@@ -74,6 +74,11 @@ nav a {
     max-height: 30%;
 }
 
+.wireframe-container {
+    max-width: 40%;
+    max-height: 40%;
+}
+
 nav a:hover{
     color: black
 }

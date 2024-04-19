@@ -1,0 +1,22 @@
+nav{
+    background-color: #1C5F02;
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0;
+    display: flex; 
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none; 
+    padding: 0 10px;
+    color: #fff;
+}
+
+nav a:hover{
+    color: black
+}

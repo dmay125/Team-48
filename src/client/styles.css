@@ -20,3 +20,72 @@ nav a {
 nav a:hover{
     color: black
 }
+
+/* CSS FOR LOGIN PAGE*/
+.login-container {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Adjust width as needed */
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.login-form button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create-account {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.create-account a {
+    color: #333;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+/* CSS FOR HOMEPAGE */ 
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    display: block; 
+    margin: 0 auto; 
+    max-width: 30%; 
+    max-height: 30%;
+}
+
+/* CSS FOR GARDEN */ 
+
+.flower {
+    position: absolute; /* Change to absolute if necessary */
+    width: 50px;
+    margin-top: 500px;
+    height: auto;
+    z-index: 1; /* Higher z-index */
+}
+

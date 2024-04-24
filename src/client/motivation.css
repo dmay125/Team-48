@@ -18,10 +18,14 @@
 };
 
 
+#success_menu {
+    display: none;
+};
+
 #students_button {
     position: absolute;
-    top: 40px; /* Adjust button position as needed */
-    right: 40px; /* Adjust button position as needed */
+    top: 80px; /* Adjust button position as needed */
+    right: 80px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: lightskyblue;
     color: white;
@@ -29,14 +33,6 @@
     border-radius: 5px;
     cursor: pointer;
 };
-
-
-
-#success_menu {
-    display: none;
-};
-
-
 
 #students_menu {
     display: none;

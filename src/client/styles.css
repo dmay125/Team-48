@@ -79,13 +79,12 @@ nav a:hover{
     max-height: 30%;
 }
 
-/* CSS FOR GARDEN */ 
-
-.flower {
-    position: absolute; /* Change to absolute if necessary */
-    width: 50px;
-    margin-top: 500px;
-    height: auto;
-    z-index: 1; /* Higher z-index */
+.collapsible-content {
+    display: none;
 }
+
+.collapsible-content.active {
+    display: block;
+}
+
 

@@ -1,34 +1,237 @@
-/* CSS FOR GARDEN */ 
 .container {
-    position: relative; /* Ensure relative positioning for absolute children */
+  position: absolute;
     max-height: 100%;
     max-width: 100%; 
 }
-
 .garden-backdrop {
     position: absolute;
-    top: 0;
+    top: 20;
     left: 0;
     z-index: 0;
+    margin-right: 400%;
+    background-size: cover;
 }
-
 .garden {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  position: relative; /* Ensure proper positioning */
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Adjust height as needed */
 }
-
-#plantButton_pink {
+#water {
+  position: absolute;
+  top: 100px; 
+  right: 20px; 
+  padding: 10px 20px;
+  background-color: #1C5F02;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+#storeButton {
     position: absolute;
-    top: 20px; /* Adjust button position as needed */
-    right: 20px; /* Adjust button position as needed */
+    top: 200px; 
+    right: 20px; 
     padding: 10px 20px;
     background-color: #1C5F02;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+#storeButton:hover{
+  background-color: #144002;
+}
+#inventoryButton:hover{
+  background-color: #144002;
+}
+#helpButton:hover{
+  background-color: #144002;
+}
+#settings:hover{
+  background-color: #144002;
+}
+#inventoryButton {
+    position: absolute;
+    top: 300px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: #1C5F02;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#helpButton {
+  position: absolute;
+  top: 400px; 
+  right: 20px; 
+  padding: 10px 20px;
+  background-color: #1C5F02;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#settings {
+  position: absolute;
+  top: 500px; 
+  right: 20px; 
+  padding: 10px 20px;
+  background-color: #1C5F02;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    z-index: 9999;
+}
+.popup-content {
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+} 
+.flower-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.flower-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.flower-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.droplet-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+h2 {
+    text-align: center;
+}
+.label {
+    display: block;
+    margin-right: 10px; 
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.label2 {
+  display: block;
+  text-align: center; 
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.count {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.plant-button {
+    padding: 5px 10px;
+    background-color: #1C5F02;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-button {
+    padding: 5px 10px;
+    background-color: #1C5F02;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-button:hover {
+    background-color: #144002;
+    color: white;
+}
+.store-button:hover {
+    
+    background-color: #144002;
+    color: white;
+}
+.plant-button:hover {
+    background-color: #144002;
+    color: white;
+}
+#greyBox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh; /* vh is viewport height */
+    background-color: #ccc; /* Grey background color */
+    z-index: -5;
+    align-items: center;
+}
+.flower {
+  position: absolute; 
+  width: 50px;
+  margin-top: 500px;
+  height: auto;
+  z-index: 1; 
+}
+.container {
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+}
+.garden-backdrop {
+  position: absolute;
+  top: 20;
+  left: 0;
+  z-index: 0;
+  margin-right: 400%;
+}
+.button-container {
+  position: absolute;
+  width: 32%;
+  height: 90%;
+  margin-top: 45px;
+  margin-right: 6px;
+  top: 0px; 
+  right:0px; 
+  background-size: cover;
+  z-index: -8;
+}
+.button-container button {
+  margin-bottom: 0px; 
+  display: block; 
+  width: 90%; 
+}
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(15deg); 
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  left: calc(50% + 165px);
+  top: calc(50% + 40px); 
+}
+.resetbutton{
+  display: block; 
+  margin-top: 10px;
 }

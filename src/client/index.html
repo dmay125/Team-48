@@ -35,17 +35,179 @@
             <img src="images/logo.jpg" alt="logo" class="image-container">
         </div>
 
-
+        <!-- Garden Page -->
         <div id="garden-page"> 
-            <div class="container">
-                <img src="images/garden.jpg" alt="garden" class="garden-backdrop" id="backdrop">
-                <div class="garden">
-                    <!-- Flowers will be dynamically added here -->
+          <div class="container">
+            <img src="images/garden.jpg" alt="garden" class="garden-backdrop" id="backdrop">
+              <div class="garden">
+                <!-- Flowers will appear here -->
+              </div>
+          </div>
+          <div class="centered-text">
+            <p>MY GARDEN</p>
+          </div>
+          <!-- Buttons -->
+          <div class="button-container">
+            <img src="images/flower_backdrop.jpg" alt="garden">
+            <button id="water">
+              <span class="label">Droplets:</span>
+              <span class="count">10</span>
+            </button>
+            <button id="storeButton">Store</button>
+            <button id="inventoryButton">Inventory</button>
+            <button id="helpButton">Help</button>
+            <button id="settings">Settings</button>
+          </div>
+          <!-- Store Popup -->
+          <div id="storePopup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <h2>Store</h2>
+              <div class="flower-button" >
+                <img src="images/droplet.png" alt="Red Flower">
+                <span class="label2">Droplets:
+                  <span id="storeDropletCount" class="count">10</span>
+                </span>
+              </div>
+              <div class="flower-buttons">
+                <div class="flower-button" >
+                  <img src="images/red_flower.png" alt="Red Flower">
+                  <span class="label">Red Flower</span>
+                  <button class="buy-button" id="buyButton_red">Buy</button>
                 </div>
-                <button id="plantButton_pink">Plant</button>
+                <div class="flower-button" >
+                  <img src="images/orange_flower.png" alt="Orange Flower">
+                  <span class="label">Orange Flower</span>
+                  <button class="buy-button" id="buyButton_orange">Buy</button>
+                </div>
+                <div class="flower-button" >
+                  <img src="images/yellow_flower.png" alt="Yellow Flower">
+                  <span class="label">Yellow Flower</span>
+                  <button class="buy-button" id="buyButton_yellow">Buy</button>
+                </div>
+                  <div class="flower-button" >
+                    <img src="images/blue_flower.png" alt="Blue Flower">
+                    <span class="label">Blue Flower</span>
+                    <button class="buy-button" id="buyButton_blue">Buy</button>
+                </div>
+                <div class="flower-button" >
+                  <img src="images/purple_flower.png" alt="Purple Flower">
+                  <span class="label">Purple Flower</span> 
+                  <button class="buy-button" id="buyButton_purple">Buy</button>
+                </div>
+                <div class="flower-button" >
+                  <img src="images/pink_flower.png" alt="Pink Flower">
+                  <span class="label">Pink Flower</span>
+                  <button class="buy-button" id="buyButton_pink">Buy</button>
+                </div>
+              </div>
             </div>
+          </div>
+          <!-- Settings Popup -->
+          <div id="settingsPopup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <h2>Settings</h2>
+              <label for="gardenName">Garden Name:</label>
+              <input type="text" id="gardenNameInput" placeholder="Enter new name">
+              <button id="changeNameButton">Change Name</button>
+              <button id="resetButton">Reset Garden</button>
+            </div>
+         </div>      
+          <!-- Help Popup -->
+          <div id="helpPopup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <h2>Welcome to the Garden!</h2>
+              <p>For the best viewing experience, please use fullscreen.</p>
+              <p>To start growing flowers, you must first earn droplets from completing tasks in Grow.</p>
+              <p>Once you earn droplets, you may use them to purchase flowers from the store.</p>
+              <p>Each flower costs 1 droplet.</p>
+              <p>After you purchase a flower, you can find it in your inventory and plant it.</p>
+              <p>To name your garden or reset your progress, go to settings.</p>
+              <p>Happy Growing!</p>
+            </div>
+          </div>
+          <!-- Inventory Popup -->
+          <div id="inventoryPopup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <h2>Inventory</h2>
+              <div class="flower-buttons">
+                <div class="flower-button" id="red-item">
+                  <img src="images/red_flower.png" alt="Red Flower">
+                  <span class="label">Red Flower:</span>
+                  <span class="count">0</span>
+                  <button class="plant-button" id="plantButton_red">Plant</button>
+                </div>
+                <div class="flower-button" id="orange-item">
+                  <img src="images/orange_flower.png" alt="Orange Flower">
+                  <span class="label">Orange Flower:</span>
+                  <span class="count">0</span>
+                  <button class="plant-button" id="plantButton_orange">Plant</button>
+                </div>
+                <div class="flower-button" id="yellow-item">
+                  <img src="images/yellow_flower.png" alt="Yellow Flower">
+                  <span class="label">Yellow Flower:</span>
+                  <span class="count">0</span>
+                  <button class="plant-button" id="plantButton_yellow">Plant</button>
+                </div>
+                <div class="flower-button" id="blue-item">
+                  <img src="images/blue_flower.png" alt="Blue Flower">
+                  <span class="label">Blue Flower:</span>
+                  <span class="count">0</span>
+                  <button class="plant-button" id="plantButton_blue">Plant</button>
+                </div>
+                <div class="flower-button" id="purple-item">
+                  <img src="images/purple_flower.png" alt="Purple Flower">
+                  <span class="label">Purple Flower:</span>
+                  <span class="count">0</span>
+                  <button class="plant-button" id="plantButton_purple">Plant</button>
+                </div>
+                <div class="flower-button" id="pink-item">
+                  <img src="images/pink_flower.png" alt="Pink Flower">
+                  <span class="label">Pink Flower:</span>
+                  <span class="count">0</span>
+                  <button class="plant-button" id="plantButton_pink">Plant</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Empty Inventory Warning -->
+          <div id="inventoryEmptyWarning" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span id="inventoryEmptyWarningClose" class="close">&times;</span>
+              <h2>Inventory Empty</h2>
+              <p>There is no more of this flower in your inventory. Go to the store to buy more.</p>
+            </div>
+          </div>
+          <!-- Reset Warning -->
+          <div id="resetWarning" class="popup" style="display: none;">
+            <div class="popup-content">
+              <h2>Are you sure you want to reset?</h2>
+              <p>This action cannot be undone.</p>
+              <button id="yes">Yes</button>
+              <button id="no">No</button>
+            </div>
+          </div>
+          <!-- No Money Warning -->
+          <div id="noMoneyWarning" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span id="noMoneyClose" class="close">&times;</span>
+              <h2>No More Droplets</h2>
+              <p>Perform tasks in the Positivity Center, Motivation Menu, and Serene Sound Center to earn more droplets.</p>
+            </div>
+          </div>
+          <!-- Name Change Popup -->
+          <div id="nameChange" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span id="nameChangeClose" class="close">&times;</span>
+              <h2>Name Changed!</h2>
+              <p>If you entered a new name, the name is now changed to that name!</p>
+            </div>
+          </div>
         </div>
-        
+        <!-- End of Garden Page -->
 
 
         <div id="positivity-page"> sample positivity

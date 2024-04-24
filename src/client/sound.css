@@ -1,18 +1,29 @@
+#sound-page {
+    display: flex;
+    height: 100%;
+}
+
 .avail-songs {
-    margin-top: 20px;
-    border: 2px solid #ccc;
+    flex: 1;
+    border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
 }
 
-.avail-songs ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.avail-songs li {
-    background-color: #f0f0f0;
+.avail-songs button {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
     margin-bottom: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.music-container {
+    flex: 2;
+    border: 2px solid black;
     border-radius: 5px;
+    padding: 10px;
 }

@@ -8,7 +8,7 @@
 #success_button {
     position: absolute;
     top: 40px; /* Adjust button position as needed */
-    right: 18px; /* Adjust button position as needed */
+    right: 15px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: lightgreen;
     color: black;
@@ -19,10 +19,22 @@
 
 #students_button {
     position: absolute;
-    top: 40px; /* Adjust button position as needed */
-    right: 20px; /* Adjust button position as needed */
+    top: 80px; /* Adjust button position as needed */
+    right: 15px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: lightskyblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+};
+
+#personalLife_button {
+    position: absolute;
+    top: 120px; /* Adjust button position as needed */
+    right: 15px; /* Adjust button position as needed */
+    padding: 10px 20px;
+    background-color: rosybrown;
     color: black;
     border: none;
     border-radius: 5px;
@@ -34,5 +46,9 @@
 };
 
 #students_menu {
+    display: none;
+};
+
+#personalLife_menu {
     display: none;
 };

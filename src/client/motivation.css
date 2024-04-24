@@ -1,0 +1,43 @@
+/* CSS FOR MOTIVATION MENU */ 
+.container {
+    position: relative;
+    max-height: 100%;
+    max-width: 100%; 
+}
+
+#success_button {
+    position: absolute;
+    top: 20px; /* Adjust button position as needed */
+    right: 20px; /* Adjust button position as needed */
+    padding: 10px 20px;
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+};
+
+
+#students_button {
+    position: absolute;
+    top: 40px; /* Adjust button position as needed */
+    right: 40px; /* Adjust button position as needed */
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+};
+
+
+
+#success_menu {
+    display: none;
+};
+
+
+
+#students_menu {
+    display: none;
+};

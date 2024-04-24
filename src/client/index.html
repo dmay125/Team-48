@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="motivation.css">
     <link rel="stylesheet" href="garden.css">
     <link rel="stylesheet" href="sound.css">
     <!-- JavaScript Files -->
     <script type="module" src="script.js" defer></script>
+    <script type="module" src="motivation.js" defer></script>
     <script type="module" src="garden.js" defer></script>
     <script type="module" src="sound.js" defer></script>
     <!-- Pouch DB -->
@@ -61,29 +63,35 @@
 
         <div id="motivation-page">
             <h1>Motivation Menu</h1>
-            <button id="success_button">Tips for Success</button>
-            <div id="success_menu">
-                <h2>Tips for Success</h2>
-                <li>"It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome." 
-                   - William James</li>
-                <li>"Success is not final; failure is not fatal: It is the courage to continue that counts." - Winston Churchill</li>
-            </div>
+            <div class="container">
+                <button id="success_button">Tips for Success</button>
+                <div id="success_menu">
+                    <h2>Tips for Success</h2>
+                    <ul>
+                        <li>"It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome." 
+                        - William James</li>
+                        <li>"Success is not final; failure is not fatal: It is the courage to continue that counts." - Winston Churchill</li>
+                    </ul>
+                </div>
 
-            <button id="students_button">Tips for Students</button>
-            <div id="students_menu">
-                <h2>Tips for Students</h2>
-                <li>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</li>
-                <li>"You've got to get up every morning with determination if you're going to go to bed with satisfaction." - George Lorimer</li>
-            </div>
-            
-            <button id="personalLife_button">Tips for Personal Life</button>
-            <div id="personalLife_menu">
-                <h2>Tips for Personal Life</h2>
-                <li>"Life isn't about finding yourself. Life is about creating yourself." - George Bernard Shaw</li>
-                <li>"Don't let yesterday take up too much of today." - Will Rogers</li>
-            </div>
+                <button id="students_button">Tips for Students</button>
+                <div id="students_menu">
+                    <h2>Tips for Students</h2>
+                    <ul>
+                        <li>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</li>
+                        <li>"You've got to get up every morning with determination if you're going to go to bed with satisfaction." - George Lorimer</li>
+                    </ul>
+                </div>
+                
+                <button id="personalLife_button">Tips for Personal Life</button>
+                <ul id="personalLife_menu">
+                    <h2>Tips for Personal Life</h2>
+                    <li>"Life isn't about finding yourself. Life is about creating yourself." - George Bernard Shaw</li>
+                    <li>"Don't let yesterday take up too much of today." - Will Rogers</li>
+                </ul>
 
-            <button id="random_tip">Random Tip</button>
+                <button id="random_tip">Random Tip</button>
+            </div>
         </div>
 
 

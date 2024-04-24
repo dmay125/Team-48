@@ -1,8 +1,11 @@
 // Motivation Menu
 const success_button = document.getElementById("success_button");
 const success_menu = document.getElementById("success_menu");
-const random_tip = document.getElementById("random_tip");
 
+const students_button = document.getElementById("students_button");
+const students_menu = document.getElementById("students_menu");
+
+const random_tip = document.getElementById("random_tip");
 
 const tips = [
     "\"It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome.\" - William James",
@@ -13,9 +16,15 @@ const tips = [
     "\"Don't let yesterday take up too much of today.\" - Will Rogers"
 ];
 
+success_menu.hidden = true;
+students_menu.hidden = true;
 
 success_button.addEventListener("click", function() {
+    success_menu.hidden = false;
+});
 
+students_button.addEventListener("click", function() {
+    students_menu.hidden = false;
 });
 
 random_tip.addEventListener("click", function() {

@@ -8,47 +8,52 @@
 #success_button {
     position: absolute;
     top: 40px; /* Adjust button position as needed */
-    right: 15px; /* Adjust button position as needed */
+    right: 100px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: lightgreen;
     color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-};
+}
 
 #students_button {
     position: absolute;
-    top: 80px; /* Adjust button position as needed */
-    right: 15px; /* Adjust button position as needed */
+    top: 240px; /* Adjust button position as needed */
+    right: 100px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: lightskyblue;
     color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-};
+}
 
 #personalLife_button {
     position: absolute;
-    top: 120px; /* Adjust button position as needed */
-    right: 15px; /* Adjust button position as needed */
+    top: 440px; /* Adjust button position as needed */
+    right: 100px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: rosybrown;
     color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-};
+}
 
 #success_menu {
     display: none;
-};
+}
 
 #students_menu {
     display: none;
-};
+}
 
 #personalLife_menu {
     display: none;
-};
+}
+
+.hidden {
+    display: none;
+}
+

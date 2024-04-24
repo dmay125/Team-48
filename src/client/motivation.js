@@ -25,27 +25,28 @@ const tips = [
     "\"Goal setting is the secret to a compelling future.\" - Tony Robbins"
 ];
 
-success_menu.hidden = true;
-students_menu.hidden = true;
-personalLife_menu.hidden = true;
-
-
 success_button.addEventListener("click", function() {
-    success_menu.hidden = false;
-    students_menu.hidden = true;
-    personalLife_menu.hidden = true;
+    if (success_menu.style.display = "none") {
+        success_menu.style.display = "block";
+    } else {
+        success_menu.style.display = "none";
+    }
 });
 
 students_button.addEventListener("click", function() {
-    success_menu.hidden = true;
-    students_menu.hidden = false;
-    personalLife_menu.hidden = true;
+    if (students_menu.style.display = "none") {
+        students_menu.style.display = "block";
+    } else {
+        students_menu.style.display = "none";
+    }
 });
 
 personalLife_button.addEventListener("click", function() {
-    success_menu.hidden = true;
-    students_menu.hidden = true;
-    personalLife_menu.hidden = false;
+    if (personalLife_menu.style.display = "none") {
+        personalLife_menu.style.display = "block";
+    } else {
+        personalLife_menu.style.display = "none";
+    }
 });
 
 random_tip.addEventListener("click", function() {

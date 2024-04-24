@@ -21,3 +21,55 @@
     width: 100%; /* Adjust width as needed */
     height: 100%; /* Adjust height as needed */
   }
+
+  .park-button-container{
+
+  }
+
+  #visitButterfliesButton {
+    position: absolute;
+    top: 200px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: #1C5F02;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#visitSlideButton {
+    position: absolute;
+    top: 200px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: #1C5F02;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#visitFlowerButton {
+    position: absolute;
+    top: 200px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: #1C5F02;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#visitWaterButton {
+    position: absolute;
+    top: 200px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: #1C5F02;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -203,6 +203,7 @@ h2 {
   left: 0;
   z-index: 0;
   margin-right: 400%;
+  background-size: cover;
 }
 .button-container {
   position: absolute;

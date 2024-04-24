@@ -4,7 +4,12 @@
     max-width: 100%; 
 }
 .garden-backdrop {
-    object-position: center top;
+    position: absolute;
+    top: 20;
+    left: 0;
+    z-index: 0;
+    margin-right: 400%;
+    background-size: cover;
 }
 .garden {
   position: relative; /* Ensure proper positioning */
@@ -198,6 +203,7 @@ h2 {
   left: 0;
   z-index: 0;
   margin-right: 400%;
+  background-size: cover;
 }
 .button-container {
   position: absolute;

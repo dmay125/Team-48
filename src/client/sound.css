@@ -1,1 +1,18 @@
+.avail-songs {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
 
+.avail-songs ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.avail-songs li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

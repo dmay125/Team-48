@@ -16,15 +16,21 @@ const tips = [
     "\"Don't let yesterday take up too much of today.\" - Will Rogers"
 ];
 
-success_menu.hidden = true;
-students_menu.hidden = true;
 
 success_button.addEventListener("click", function() {
-    success_menu.hidden = false;
+    if (success_menu.style.display === "none") {
+        success_menu.style.display = "block";
+    } else {
+        success_menu.style.display = "none";
+    }
 });
 
 students_button.addEventListener("click", function() {
-    students_menu.hidden = false;
+    if (students_menu.style.display === "none") {
+        students_menu.style.display = "block";
+    } else {
+        students_menu.style.display = "none";
+    }
 });
 
 random_tip.addEventListener("click", function() {

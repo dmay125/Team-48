@@ -9,6 +9,7 @@ const personalLife_button = document.getElementById("personalLife_button");
 const personalLife_menu = document.getElementById("personalLife_menu");
 
 const random_tip = document.getElementById("random_tip");
+const tip_box = document.getElementById("tip_box");
 
 const tips = [
     "\"It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome.\" - William James",
@@ -25,25 +26,58 @@ const tips = [
     "\"Goal setting is the secret to a compelling future.\" - Tony Robbins"
 ];
 
+success_menu.hidden = true;
+students_menu.hidden = true;
+personalLife_menu.hidden = true;
+tip_box.style.hidden = false;
+document.getElementById("tip").hidden = false;
+
 success_button.addEventListener("click", function() {
-    if (success_menu.style.display = "none") {
+    success_menu.hidden = false;
+    students_menu.hidden = true;
+    personalLife_menu.hidden = true;
+    tip_box.style.hidden = true;
+    document.getElementById("tip").hidden = true;
+
+    if (success_menu.style.display === "none") {
         success_menu.style.display = "block";
+        students_menu.style.display = "none";
+        personalLife_menu.style.display = "none";
+        document.getElementById("tip").display = "none";
     } else {
         success_menu.style.display = "none";
     }
 });
 
 students_button.addEventListener("click", function() {
-    if (students_menu.style.display = "none") {
+    success_menu.hidden = true;
+    students_menu.hidden = false;
+    personalLife_menu.hidden = true;
+    tip_box.style.hidden = true;
+    document.getElementById("tip").hidden = true;
+
+    if (students_menu.style.display === "none") {
+        success_menu.style.display = "none";
         students_menu.style.display = "block";
+        personalLife_menu.style.display = "none";
+        document.getElementById("tip").display = "none";
     } else {
         students_menu.style.display = "none";
     }
 });
 
 personalLife_button.addEventListener("click", function() {
-    if (personalLife_menu.style.display = "none") {
+    success_menu.hidden = true;
+    students_menu.hidden = true;
+    personalLife_menu.hidden = false;
+    tip_box.style.hidden = true;
+    document.getElementById("tip").hidden = true;
+    
+    if (personalLife_menu.style.display === "none") {
+        success_menu.style.display = "none";
+        students_menu.style.display = "none";
         personalLife_menu.style.display = "block";
+        document.getElementById("tip").display = "none";
     } else {
         personalLife_menu.style.display = "none";
     }
@@ -51,4 +85,19 @@ personalLife_button.addEventListener("click", function() {
 
 random_tip.addEventListener("click", function() {
     const tip = tips[Math.floor(Math.random() * tips.length)];
+
+    success_menu.hidden = true;
+    students_menu.hidden = true;
+    personalLife_menu.hidden = true;
+    document.getElementById("tip").hidden = false;
+    document.getElementById("tip").innerText = tip;
+
+    if (document.getElementById("tip").display = "none") {
+        success_menu.style.display = "none";
+        students_menu.style.display = "none";
+        personalLife_menu.style.display = "none";
+        document.getElementById("tip").display = "block";
+    } else {
+        document.getElementById("tip").display = "none";
+    }
 });

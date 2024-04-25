@@ -30,20 +30,21 @@ success_menu.hidden = true;
 students_menu.hidden = true;
 personalLife_menu.hidden = true;
 tip_box.style.hidden = false;
-document.getElementById("tip").hidden = false;
+//document.getElementById("tip").hidden = false;
 
 success_button.addEventListener("click", function() {
     success_menu.hidden = false;
     students_menu.hidden = true;
     personalLife_menu.hidden = true;
     tip_box.style.hidden = true;
-    document.getElementById("tip").hidden = true;
+    //document.getElementById("tip").hidden = true;
 
     if (success_menu.style.display === "none") {
         success_menu.style.display = "block";
         students_menu.style.display = "none";
         personalLife_menu.style.display = "none";
-        document.getElementById("tip").display = "none";
+        tip_box.style.display = "none";
+        //document.getElementById("tip").display = "none";
     } else {
         success_menu.style.display = "none";
     }
@@ -54,13 +55,14 @@ students_button.addEventListener("click", function() {
     students_menu.hidden = false;
     personalLife_menu.hidden = true;
     tip_box.style.hidden = true;
-    document.getElementById("tip").hidden = true;
+    //document.getElementById("tip").hidden = true;
 
     if (students_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "block";
         personalLife_menu.style.display = "none";
-        document.getElementById("tip").display = "none";
+        tip_box.style.display = "none";
+        //document.getElementById("tip").display = "none";
     } else {
         students_menu.style.display = "none";
     }
@@ -71,13 +73,14 @@ personalLife_button.addEventListener("click", function() {
     students_menu.hidden = true;
     personalLife_menu.hidden = false;
     tip_box.style.hidden = true;
-    document.getElementById("tip").hidden = true;
+    //document.getElementById("tip").hidden = true;
     
     if (personalLife_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "none";
         personalLife_menu.style.display = "block";
-        document.getElementById("tip").display = "none";
+        tip_box.style.display = "none";
+        //document.getElementById("tip").display = "none";
     } else {
         personalLife_menu.style.display = "none";
     }
@@ -89,15 +92,15 @@ random_tip.addEventListener("click", function() {
     success_menu.hidden = true;
     students_menu.hidden = true;
     personalLife_menu.hidden = true;
-    document.getElementById("tip").hidden = false;
-    document.getElementById("tip").innerText = tip;
+    tip_box.style.hidden = false;
+    document.getElementById("tip").innerHTML = tip;
 
-    if (document.getElementById("tip").display = "none") {
+    if (tip_box.style.display = "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "none";
         personalLife_menu.style.display = "none";
-        document.getElementById("tip").display = "block";
+        tip_box.style.display = "block";
     } else {
-        document.getElementById("tip").display = "none";
+        tip_box.style.display = "none";
     }
 });

@@ -26,6 +26,12 @@ const tips = [
     "\"Goal setting is the secret to a compelling future.\" - Tony Robbins"
 ];
 
+success_menu.style.display = "none";
+students_menu.style.display = "none";
+personalLife_menu.style.display = "none";
+tip_box.style.display = "block";
+document.getElementById("tip").innerText = tips[Math.floor(Math.random() * tips.length)];
+
 success_button.addEventListener("click", function() {
     if (success_menu.style.display === "none") {
         success_menu.style.display = "block";

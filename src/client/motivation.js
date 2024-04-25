@@ -26,17 +26,7 @@ const tips = [
     "\"Goal setting is the secret to a compelling future.\" - Tony Robbins"
 ];
 
-success_menu.hidden = true;
-students_menu.hidden = true;
-personalLife_menu.hidden = true;
-tip_box.style.hidden = false;
-
 success_button.addEventListener("click", function() {
-    success_menu.hidden = false;
-    students_menu.hidden = true;
-    personalLife_menu.hidden = true;
-    tip_box.style.hidden = true;
-
     if (success_menu.style.display === "none") {
         success_menu.style.display = "block";
         students_menu.style.display = "none";
@@ -46,11 +36,6 @@ success_button.addEventListener("click", function() {
 });
 
 students_button.addEventListener("click", function() {
-    success_menu.hidden = true;
-    students_menu.hidden = false;
-    personalLife_menu.hidden = true;
-    tip_box.style.hidden = true;
-
     if (students_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "block";
@@ -60,11 +45,6 @@ students_button.addEventListener("click", function() {
 });
 
 personalLife_button.addEventListener("click", function() {
-    success_menu.hidden = true;
-    students_menu.hidden = true;
-    personalLife_menu.hidden = false;
-    tip_box.style.hidden = true;
-    
     if (personalLife_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "none";
@@ -75,14 +55,9 @@ personalLife_button.addEventListener("click", function() {
 
 random_tip.addEventListener("click", function() {
     const tip = tips[Math.floor(Math.random() * tips.length)];
+    document.getElementById("tip").innerText = tip;
 
-    success_menu.hidden = true;
-    students_menu.hidden = true;
-    personalLife_menu.hidden = true;
-    tip_box.style.hidden = false;
-    document.getElementById("tip").innerHTML = tip;
-
-    if (tip_box.style.display = "none") {
+    if (tip_box.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "none";
         personalLife_menu.style.display = "none";

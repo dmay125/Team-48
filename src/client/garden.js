@@ -1,3 +1,5 @@
+//PouchDB
+const db = new PouchDB('garden-db');
 //Retrieving elements 
 const plantButton_pink = document.getElementById("plantButton_pink");
 const plantButton_red = document.getElementById("plantButton_red");
@@ -390,10 +392,48 @@ closeSettingsPopup.addEventListener("click", function() {
     settingsPopup.style.display = "none";
 });
 //Name Change Functions
-changeNameButton.addEventListener("click", function() {
-  showChangeName();
+async function saveGardenNameToDB(newName) {
+  try {
+    const doc = await db.get('gardenName');
+    doc.name = newName;
+    await db.put(doc);
+    console.log('Garden name updated successfully!');
+  } catch (err) {
+    if (err.status === 404) {
+      await db.put({ _id: 'gardenName', name: newName });
+      console.log('Garden name saved successfully!');
+    } else {
+      throw err;
+    }
+  }
+}
+async function initializeGardenName() {
+  try {
+    const doc = await db.get('gardenName');
+    gardenNameDisplay.textContent = doc.name;
+  } catch (err) {
+    if (err.status === 404) {
+      const defaultName = "My Garden";
+      gardenNameDisplay.textContent = defaultName;
+      await db.put({ _id: 'gardenName', name: defaultName });
+      console.log('Default garden name saved successfully!');
+    } else {
+      throw err;
+    }
+  }
+}
+window.addEventListener('DOMContentLoaded', async () => {
+  await initializeGardenName();
+});
+changeNameButton.addEventListener("click", async function() {
+  try {
+    showChangeName();
     const newName = gardenNameInput.value;
     gardenNameDisplay.textContent = newName;
+    await saveGardenNameToDB(newName);
+  } catch (err) {
+    console.error('Error:', err);
+  }
 });
 closeNamePopup.addEventListener("click", function() {
     nameChange.style.display = "none";
@@ -430,3 +470,7 @@ yes.addEventListener("click", function(){
 no.addEventListener("click", function(){
   hideResetWarning();
 })
+
+
+
+

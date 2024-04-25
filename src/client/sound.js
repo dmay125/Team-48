@@ -1,7 +1,7 @@
 const musicContainer = document.querySelector('.music-container');
 const searchInput = document.querySelector('.search input');
 const songTitle = document.getElementById('song-title');
-const availSongs = document.querySelectorAll('.avail-songs button');
+const songButtons = document.querySelectorAll('.avail-songs button');
 const songButton1 = document.querySelector('.song-1');
 const songButton2 = document.querySelector('.song-2');
 const songButton3 = document.querySelector('.song-3');
@@ -67,6 +67,19 @@ function nextSong() {
 }
 
 // event listeners
+searchInput.addEventListener('input', () => {
+    const searched = searchInput.value.toLowerCase();
+
+    songButtons.forEach(button => {
+        const buttonText = button.innerText.toLowerCase();
+        if(buttonText.includes(searched)) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    })
+})
+
 playBtn.addEventListener('click', () => {
     const isPlaying = musicContainer.classList.contains('play');
     

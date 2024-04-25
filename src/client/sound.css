@@ -1,13 +1,18 @@
-#sound-page {
+#sound-container {
     display: flex;
-    height: 100%;
+}
+
+.search {
+    margin-bottom: 15px;
 }
 
 .avail-songs {
     flex: 1;
+    display: flex;
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
+    flex-direction: column;
 }
 
 .avail-songs button {
@@ -18,7 +23,6 @@
     padding: 10px;
     margin-bottom: 5px;
     cursor: pointer;
-    width: 100%;
 }
 
 .music-container {
@@ -26,4 +30,23 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
+}
+
+.music-info {
+    display: flex;
+    justify-content: center;
+}
+
+#song-title {
+    font-size: 20px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.music-nav {
+    display: flex;
+    justify-content: center;
 }

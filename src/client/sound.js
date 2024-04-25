@@ -79,3 +79,18 @@ playBtn.addEventListener('click', () => {
 
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
+
+songButton1.addEventListener('click', () => {
+    loadSong(songs[0]);
+    playSong();
+})
+
+songButton2.addEventListener('click', () => {
+    loadSong(songs[1]);
+    playSong();
+})
+
+songButton3.addEventListener('click', () => {
+    loadSong(songs[2]);
+    playSong();
+})

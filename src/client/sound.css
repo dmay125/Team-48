@@ -45,6 +45,7 @@
 .img-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .music-nav {

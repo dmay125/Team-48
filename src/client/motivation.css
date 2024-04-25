@@ -19,7 +19,7 @@
 
 #students_button {
     position: absolute;
-    top: 240px; /* Adjust button position as needed */
+    top: 140px; /* Adjust button position as needed */
     right: 100px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: lightskyblue;
@@ -31,7 +31,7 @@
 
 #personalLife_button {
     position: absolute;
-    top: 440px; /* Adjust button position as needed */
+    top: 240px; /* Adjust button position as needed */
     right: 100px; /* Adjust button position as needed */
     padding: 10px 20px;
     background-color: rosybrown;
@@ -39,6 +39,30 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+#random_tip {
+    position: absolute;
+    top: 440px; /* Adjust button position as needed */
+    left: 200px; /* Adjust button position as needed */
+    padding: 10px 20px;
+    background-color: darkorange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tip_box {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    padding: 100px 100px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
 }
 
 #success_menu {
@@ -52,3 +76,8 @@
 #personalLife_menu {
     display: none;
 }
+
+.hidden {
+    display: none;
+}
+

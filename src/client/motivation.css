@@ -54,16 +54,18 @@
     cursor: pointer;
 }
 
-.tip_box {
+/*
+#tip_box {
     position: absolute;
     top: 40px;
-    left: 100px;
-    padding: 100px 100px;
+    left: 50px;
+    padding: 200px 300px;
     background-color: gold;
     color: black;
     border: none;
     border-radius: 5px;
 }
+*/
 
 #success_menu {
     display: none;
@@ -77,7 +79,10 @@
     display: none;
 }
 
-.hidden {
-    display: none;
+#tip {
+    position: absolute;
+    width: fit-content;
+    background-color: gold;
+    display: block;
 }
 

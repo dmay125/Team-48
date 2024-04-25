@@ -9,7 +9,7 @@
     position: absolute;
     top: 40px; /* Adjust button position as needed */
     right: 100px; /* Adjust button position as needed */
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: lightgreen;
     color: black;
     border: none;
@@ -21,7 +21,7 @@
     position: absolute;
     top: 140px; /* Adjust button position as needed */
     right: 100px; /* Adjust button position as needed */
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: lightskyblue;
     color: black;
     border: none;
@@ -33,7 +33,7 @@
     position: absolute;
     top: 240px; /* Adjust button position as needed */
     right: 100px; /* Adjust button position as needed */
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: rosybrown;
     color: black;
     border: none;
@@ -44,9 +44,9 @@
 
 #random_tip {
     position: absolute;
-    top: 440px; /* Adjust button position as needed */
-    left: 200px; /* Adjust button position as needed */
-    padding: 10px 20px;
+    top: 340px; /* Adjust button position as needed */
+    right: 100px; /* Adjust button position as needed */
+    padding: 20px 40px;
     background-color: darkorange;
     color: black;
     border: none;
@@ -54,18 +54,27 @@
     cursor: pointer;
 }
 
-/*
 #tip_box {
     position: absolute;
     top: 40px;
     left: 50px;
-    padding: 200px 300px;
+    right: 400px;
+    padding: 200px 600px;
     background-color: gold;
     color: black;
     border: none;
     border-radius: 5px;
 }
-*/
+
+#tip {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    right: 200px;
+    background-color: gold;
+    display: block;
+    font-size: 30px;
+}
 
 #success_menu {
     display: none;
@@ -79,10 +88,5 @@
     display: none;
 }
 
-#tip {
-    position: absolute;
-    width: fit-content;
-    background-color: gold;
-    display: block;
-}
+
 

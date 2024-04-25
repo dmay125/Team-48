@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+#success_menu {
+    display: none;
+}
+
 #students_button {
     position: absolute;
     top: 140px; /* Adjust button position as needed */
@@ -27,6 +31,10 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#students_menu {
+    display: none;
 }
 
 #personalLife_button {
@@ -41,6 +49,9 @@
     cursor: pointer;
 }
 
+#personalLife_menu {
+    display: none;
+}
 
 #random_tip {
     position: absolute;
@@ -54,6 +65,7 @@
     cursor: pointer;
 }
 
+
 #tip_box {
     position: absolute;
     top: 40px;
@@ -64,6 +76,7 @@
     color: black;
     border: none;
     border-radius: 5px;
+    display: block;
 }
 
 #tip {
@@ -76,17 +89,7 @@
     font-size: 30px;
 }
 
-#success_menu {
-    display: none;
-}
 
-#students_menu {
-    display: none;
-}
-
-#personalLife_menu {
-    display: none;
-}
 
 
 

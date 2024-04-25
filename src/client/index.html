@@ -275,43 +275,44 @@
         <div id="sound-page">
           <h1>Serene Sound Center</h1>
           <div id="sound-container">
+            <!--sound button style-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
             <!--list of available songs-->
             <div class="avail-songs">
                 <!--search bar for songs-->    
                 <div class="search">
                   <input type="text" placeholder="Search for a song">
                 </div>
-                <button class="song-1">song 1</button>
-                <button class="song-2">song 2</button>
-                <button class="song-3">song 3</button>
+                <button class="song-1">Good Night</button>
+                <button class="song-2">Once In Paris</button>
+                <button class="song-3">Separation</button>
               </div>
               
               <!--info on current song being played-->
               <div class="music-container">
                 <div class="music-info">
-                  <h4 id="song-title">Test song</h4>
+                  <h4 id="song-title"></h4>
                   <div class="progress-container">
                     <div class="progress"></div>
                   </div>
                 </div>
 
-                <audo src="music/music-mp3/good-night.mp3" id="audio"></audo>
+                <audio src="music/music-mp3/good-night.mp3" id="audio"></audio>
                 <div class="img-container">
                   <img src="music/music-images/good-night.png" alt="music-cover" id="cover">
                 </div>
 
-                <!--sound button style-->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                 <!--buttons to go back, play, and go to next song-->
                 <div class="music-nav">
                   <button id="prev" class="action-btn">
                     <i class="fas fa-backward"></i>
                   </button>
                   <button id="play" class="action-btn action-btn-big">
-                      <i class="fas fa-play"></i>
+                    <i class="fas fa-play"></i>
                   </button>
                   <button id="next" class="action-btn">
-                      <i class="fas fa-forward"></i>
+                    <i class="fas fa-forward"></i>
                   </button>
                 </div>
               </div>

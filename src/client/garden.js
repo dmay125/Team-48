@@ -39,6 +39,9 @@ const gardenNameDisplay = document.querySelector(".centered-text p");
 const closeNamePopup = document.querySelector("#nameChange .close");
 const yes = document.getElementById("yes");
 const no = document.getElementById("no");
+const wateritemCount = water.querySelector(".count");
+const waterCount = wateritemCount.textContent;
+const storeWaterCount = document.getElementById('storeDropletCount');
 //Warning Functions
 function showInventoryEmptyWarning() {
   const warningPopup = document.getElementById("inventoryEmptyWarning");
@@ -314,8 +317,8 @@ redButton.addEventListener("click", function() {
       shownoMoneyWarning();
   } else {
     water.querySelector(".count").textContent --; // Update count in inventory popup
-    document.getElementById('storeDropletCount').textContent--;
     redItem.querySelector(".count").textContent++;
+    document.getElementById('storeDropletCount').textContent--;
 }});
 orangeButton.addEventListener("click", function() {
   const wateritemCount = water.querySelector(".count");
@@ -466,11 +469,10 @@ yes.addEventListener("click", function(){
   document.getElementById("storeDropletCount").textContent = "0";
   const garden = document.querySelector(".garden");
   garden.innerHTML = ""; 
+  saveGardenNameToDB("MY GARDEN");
+  gardenNameDisplay.textContent = "MY GARDEN";
 })
 no.addEventListener("click", function(){
   hideResetWarning();
 })
-
-
-
 

@@ -1,12 +1,17 @@
-#sound-container {
+#all-sound-container {
     display: flex;
     height: 600px;
+    flex-direction: row;
 }
 
 .search {
     margin-bottom: 15px;
 }
-
+#sound-container {
+    flex: 1;
+    display: flex;
+    height: 600px;
+}
 .avail-songs {
     flex: 1;
     display: flex;
@@ -15,7 +20,6 @@
     padding: 10px;
     flex-direction: column;
 }
-
 .avail-songs button {
     background-color: lightgreen;
     color: black;
@@ -26,14 +30,9 @@
     cursor: pointer;
     text-align: left;
 }
-
-.song-1:hover{
-    background-color: green;
-}
-.song-2:hover{
-    background-color: green;
-}
-.song-3:hover{
+.song-1:hover,
+.song-2:hover,
+.song-3:hover {
     background-color: green;
 }
 
@@ -72,4 +71,86 @@
 .music-nav button {
     font-size: 30px;
     padding: 10px 20px;
+}
+
+.avail-songs .song-shop {
+    background-color: lightblue;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    z-index: 9999;
+}
+.popup-content {
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+} 
+.song-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.song-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.song-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+h2 {
+    text-align: center;
+}
+.label {
+    display: block;
+    margin-right: 10px; 
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.label2 {
+  display: block;
+  text-align: center; 
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.count {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.sample-button {
+    margin-right: 10px;
+}
+.buy-button {
+    padding: 5px 10px;
+    background-color: #1C5F02;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-button:hover {
+    background-color: #144002;
+    color: white;
+}
+.avail-songs .song-shop:hover {
+    background-color: rgb(40, 177, 223);
 }

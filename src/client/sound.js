@@ -1,10 +1,19 @@
 const musicContainer = document.querySelector('.music-container');
 const searchInput = document.querySelector('.search input');
 const songTitle = document.getElementById('song-title');
+
 const songButtons = document.querySelectorAll('.avail-songs button');
 const songButton1 = document.querySelector('.song-1');
 const songButton2 = document.querySelector('.song-2');
 const songButton3 = document.querySelector('.song-3');
+const shopButton = document.querySelector('.song-shop');
+const shopPopup = document.getElementById("shopPopup");
+const closePopup = shopPopup.querySelector(".close");
+
+const redButton = document.getElementById("buyButton_red");
+const orangeButton = document.getElementById("buyButton_orange");
+const yellowButton = document.getElementById("buyButton_yellow");
+
 const progress = document.getElementById('progress');
 const progressContainer = document.querySelector('.progress-container');
 const audio = document.getElementById('audio');
@@ -107,3 +116,21 @@ songButton3.addEventListener('click', () => {
     loadSong(songs[2]);
     playSong();
 })
+
+//Store Functions
+shopButton.addEventListener("click", function() {
+  shopPopup.style.display = "block";
+});
+closePopup.addEventListener("click", function() {
+  shopPopup.style.display = "none";
+});
+
+//Warning Functions
+function shownoMoneyWarning() {
+  const warningPopup = document.getElementById("noMoneyWarning");
+  warningPopup.style.display = "block";
+}
+function hidenoMoneyWarning() {
+  const warningPopup = document.getElementById("noMoneyWarning");
+  warningPopup.style.display = "none";
+}

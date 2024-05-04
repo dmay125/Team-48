@@ -326,49 +326,102 @@
 
 
         <div id="sound-page">
-          <h1>Serene Sound Center</h1>
-          <div id="sound-container">
-            <!--sound button style-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <div id="sound-heading">
+            <h1>Serene Sound Center</h1>
+          </div>
 
-            <!--list of available songs-->
-            <div class="avail-songs">
-                <!--search bar for songs-->    
-                <div class="search">
-                  <input type="text" placeholder="Search for a song">
-                </div>
-                <button class="song-1">Good Night</button>
-                <button class="song-2">Once In Paris</button>
-                <button class="song-3">Separation</button>
+          <!-- Shop Popup -->
+          <div id="shopPopup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <h2>Song Shop</h2>
+              <div class="song-button" >
+                <img src="images/droplet.png" alt="droplet">
+                <spa n class="label2">Droplets:
+                  <span id="shopDropletCount" class="count">10</span>
+                </span>
               </div>
-              
-              <!--info on current song being played-->
-              <div class="music-container">
-                <div class="music-info">
-                  <h4 id="song-title"></h4>
-                  <div class="progress-container">
-                    <div class="progress"></div>
+              <div class="song-buttons">
+                <div class="song-button" >
+                  <img src="music/music-images/softer-love.png" alt="softer love song">
+                  <span class="label">Softer Love</span>
+                  <button class="sample-button" id="sampleButton-softer-love">Hear 10 second sample</button>
+                  <button class="buy-button" id="buyButton_red">Buy</button>
+                </div>
+                <div class="song-button" >
+                  <img src="music/music-images/relaxing-piano.png" alt="relaxing piano song">
+                  <span class="label">Relaxing Piano</span>
+                  <button class="sample-button" id="sampleButton-softer-love">Hear 10 second sample</button>
+                  <button class="buy-button" id="buyButton_orange">Buy</button>
+                </div>
+                <div class="song-button" >
+                  <img src="music/music-images/playing-in-color.png" alt="playing in color song">
+                  <span class="label">Playing In Color</span>
+                  <button class="sample-button" id="sampleButton-softer-love">Hear 10 second sample</button>
+                  <button class="buy-button" id="buyButton_yellow">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- No Money Warning -->
+          <div id="noMoneyWarning" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span id="noMoneyClose" class="close">&times;</span>
+              <h2>No More Droplets</h2>
+              <p>Perform tasks in the Positivity Center, Motivation Menu, and Serene Sound Center to earn more droplets.</p>
+            </div>
+          </div>
+          
+          <!--contains everything except Serene Sound Center heading-->
+          <div id="all-sound-container">
+            <div id="sound-container">
+              <!--sound button style-->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+              <div class="avail-songs">
+                  <!--search bar for songs-->    
+                  <div class="search">
+                    <input type="text" placeholder="Search for a song">
                   </div>
-                </div>
-
-                <audio src="music/music-mp3/good-night.mp3" id="audio"></audio>
-                <div class="img-container">
-                  <img src="music/music-images/good-night.png" alt="music-cover" id="cover">
-                </div>
-
-                <!--buttons to go back, play, and go to next song-->
-                <div class="music-nav">
-                  <button id="prev" class="action-btn">
-                    <i class="fas fa-backward"></i>
-                  </button>
-                  <button id="play" class="action-btn">
-                    <i class="fas fa-play"></i>
-                  </button>
-                  <button id="next" class="action-btn">
-                    <i class="fas fa-forward"></i>
-                  </button>
+                  <!--list of available songs-->
+                  <button class="song-1">Good Night</button>
+                  <button class="song-2">Once In Paris</button>
+                  <button class="song-3">Separation</button>
+                  <button class="song-shop">🛒 Shop for a new song 🛒</button>
+              </div>
+            </div>
+            
+                
+            <!--info on current song being played-->
+            <div class="music-container">
+              <div class="music-info">
+                <h4 id="song-title"></h4>
+                <div class="progress-container">
+                  <div class="progress"></div>
                 </div>
               </div>
+  
+              <audio src="music/music-mp3/good-night.mp3" id="audio"></audio>
+              <div class="img-container">
+                <img src="music/music-images/good-night.png" alt="music-cover" id="cover">
+              </div>
+  
+              <!--buttons to go back, play, and go to next song-->
+              <div class="music-nav">
+                <button id="prev" class="action-btn">
+                  <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn">
+                  <i class="fas fa-forward"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <article>
             <!-- Primary content like a blog post or article -->

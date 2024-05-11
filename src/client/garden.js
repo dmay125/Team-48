@@ -76,7 +76,7 @@ plantButton_red.addEventListener("click", function() {
   } else {
       // Decrease count and proceed with plant function
       redItemCount.textContent--; // Decrease count
-
+      
       const flower = document.createElement("img");
       flower.src = "images/red_flower.png";
       flower.classList.add("flower");

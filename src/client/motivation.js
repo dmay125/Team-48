@@ -19,12 +19,22 @@ const succTips = [
     "\"Success usually comes to those who are too busy to be looking for it.\" - Henry David Thoreau"
 ]
 
+const studentTips = [
+    "\"Education is the most powerful weapon which you can use to change the world.\" - Nelson Mandela",
+    "\"You've got to get up every morning with determination if you're going to go to bed with satisfaction.\" —George Lorimer",
+    "\"The most difficult thing is the decision to act; the rest is merely tenacity.\" - Amelia Earhart",
+    "\"A little progress each day adds up to big results.\" - Satya Nani"
+]
+
+const personalLifeTips = [
+    "\"Life isn't about finding yourself. Life is about creating yourself.\" - George Bernard Shaw",
+    "\"Don't let yesterday take up too much of today.\" - Will Rogers",
+    "\"If you are working on something that you really care about, you don't have to be pushed. The vision pulls you.\" - Steve Jobs",
+    "\"Goal setting is the secret to a compelling future.\" - Tony Robbins"
+]
 
 
-
-
-
-const tips = [
+const allTips = [
     "\"It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome.\" - William James",
     "\"Success is not final; failure is not fatal: It is the courage to continue that counts.\" - Winston Churchill",
     "\"It is better to fail in originality than to succeed in imitation.\" - Herman Melville",
@@ -43,9 +53,14 @@ success_menu.style.display = "none";
 students_menu.style.display = "none";
 personalLife_menu.style.display = "none";
 tip_box.style.display = "block";
-document.getElementById("tip").innerText = tips[Math.floor(Math.random() * tips.length)];
+document.getElementById("tip").innerText = "";
 
 success_button.addEventListener("click", function() {
+    const tip = succTips[Math.floor(Math.random() * succTips.length)];
+    document.getElementById("tip").innerText = tip;
+
+
+
     if (success_menu.style.display === "none") {
         success_menu.style.display = "block";
         students_menu.style.display = "none";
@@ -55,6 +70,9 @@ success_button.addEventListener("click", function() {
 });
 
 students_button.addEventListener("click", function() {
+    const tip = studentTips[Math.floor(Math.random() * studentTips.length)];
+    document.getElementById("tip").innerText = tip;
+
     if (students_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "block";
@@ -64,6 +82,9 @@ students_button.addEventListener("click", function() {
 });
 
 personalLife_button.addEventListener("click", function() {
+    const tip = personalLifeTips[Math.floor(Math.random() * personalLifeTips.length)];
+    document.getElementById("tip").innerText = tip;
+
     if (personalLife_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "none";
@@ -73,7 +94,7 @@ personalLife_button.addEventListener("click", function() {
 });
 
 random_tip.addEventListener("click", function() {
-    const tip = tips[Math.floor(Math.random() * tips.length)];
+    const tip = allTips[Math.floor(Math.random() * allTips.length)];
     document.getElementById("tip").innerText = tip;
 
     if (tip_box.style.display === "none") {

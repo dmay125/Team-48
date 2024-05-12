@@ -1,4 +1,5 @@
 //inport the `express` module
+/*
 const express = require('express');
 
 //create an Express application
@@ -14,3 +15,4 @@ app.get('/', (req, res) => {
 app.listen(port, () =>{
     console.log(`Server is running on port ${PORT}`);
 });
+*/

@@ -19,6 +19,7 @@
     border-radius: 5px;
     padding: 10px;
     flex-direction: column;
+    overflow-y: auto;
 }
 .avail-songs button {
     background-color: lightgreen;
@@ -30,10 +31,8 @@
     cursor: pointer;
     text-align: left;
 }
-.song-1:hover,
-.song-2:hover,
-.song-3:hover {
-    background-color: green;
+.avail-songs button:hover:not(.song-shop) {
+    background-color: rgb(80, 175, 80);
 }
 
 .music-container {
@@ -90,6 +89,8 @@
 }
 .popup-content {
     position: relative;
+    max-height: 400px;
+    overflow-y: auto;
 }
 .close {
     position: absolute;
@@ -97,13 +98,12 @@
     right: 10px;
     cursor: pointer;
 } 
-.song-buttons {
+.shop-buttons {
+    flex: 1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
+    flex-direction: column;
 }
-.song-button {
+.shop-button {
     display: flex;
     align-items: center;
     padding: 5px 10px;
@@ -111,7 +111,7 @@
     border-radius: 5px;
     background-color: #f9f9f9;
 }
-.song-button img {
+.shop-button img {
     width: 30px;
     height: 30px;
     margin-right: 5px;

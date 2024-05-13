@@ -53,6 +53,7 @@ success_menu.style.display = "none";
 students_menu.style.display = "none";
 personalLife_menu.style.display = "none";
 random_menu.style.display = "none";
+
 //document.getElementById("tip").innerText = "";
 
 success_button.addEventListener("click", function() {

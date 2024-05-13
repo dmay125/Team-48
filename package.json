@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "team-48",
   "version": "1.0.0",
-  "description": "",
+  "description": "Grow: structure",
   "main": "index.js",
   "type": "module",
   "license": "AGPL-version-3.0",
@@ -17,10 +17,7 @@
   },
   "bugs": "",
   "keywords": [],
-  "author": {
-    "name": "Team-48",
-    "url": "https://github.com/dmay125/Team-48.git"
-  },
+  "author": "Team-48 (https://github.com/dmay125/Team-48.git)",
   "contributors": [
     "Daniel May, dmay@umass.edu, dmay125",
     "Amanda Arcieri, aarcieri@umass.edu, amandaarc",
@@ -44,6 +41,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "express-pouchdb": "^4.2.0",
     "express-session": "^1.18.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",

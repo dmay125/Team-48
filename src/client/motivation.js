@@ -8,8 +8,8 @@ const students_menu = document.getElementById("students_menu");
 const personalLife_button = document.getElementById("personalLife_button");
 const personalLife_menu = document.getElementById("personalLife_menu");
 
-const random_tip = document.getElementById("random_tip");
-const tip_box = document.getElementById("tip_box");
+const random_tip = document.getElementById("randomTip_button");
+const random_menu = document.getElementById("random_menu");
 
 
 const succTips = [
@@ -52,12 +52,12 @@ const allTips = [
 success_menu.style.display = "none";
 students_menu.style.display = "none";
 personalLife_menu.style.display = "none";
-tip_box.style.display = "block";
-document.getElementById("tip").innerText = "";
+random_menu.style.display = "none";
+//document.getElementById("tip").innerText = "";
 
 success_button.addEventListener("click", function() {
     const tip = succTips[Math.floor(Math.random() * succTips.length)];
-    document.getElementById("tip").innerText = tip;
+    document.getElementById("tipSucc").innerText = tip;
 
 
 
@@ -65,42 +65,42 @@ success_button.addEventListener("click", function() {
         success_menu.style.display = "block";
         students_menu.style.display = "none";
         personalLife_menu.style.display = "none";
-        tip_box.style.display = "none";
+        random_menu.style.display = "none";
     }
 });
 
 students_button.addEventListener("click", function() {
     const tip = studentTips[Math.floor(Math.random() * studentTips.length)];
-    document.getElementById("tip").innerText = tip;
+    document.getElementById("tipStud").innerText = tip;
 
     if (students_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "block";
         personalLife_menu.style.display = "none";
-        tip_box.style.display = "none";
+        random_menu.style.display = "none";
     }
 });
 
 personalLife_button.addEventListener("click", function() {
     const tip = personalLifeTips[Math.floor(Math.random() * personalLifeTips.length)];
-    document.getElementById("tip").innerText = tip;
+    document.getElementById("tipPers").innerText = tip;
 
     if (personalLife_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "none";
         personalLife_menu.style.display = "block";
-        tip_box.style.display = "none";
+        random_menu.style.display = "none";
     }
 });
 
 random_tip.addEventListener("click", function() {
     const tip = allTips[Math.floor(Math.random() * allTips.length)];
-    document.getElementById("tip").innerText = tip;
+    document.getElementById("tipRand").innerText = tip;
 
-    if (tip_box.style.display === "none") {
+    if (random_menu.style.display === "none") {
         success_menu.style.display = "none";
         students_menu.style.display = "none";
         personalLife_menu.style.display = "none";
-        tip_box.style.display = "block";
+        random_menu.style.display = "block";
     }
 });

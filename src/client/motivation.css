@@ -75,24 +75,54 @@
     top: 40px;
     left: 50px;
     right: 400px;
-    padding: 200px 600px;
+    padding: 150px 600px;
     background-color: gold;
     color: black;
     border: none;
     border-radius: 5px;
     display: block;
+    font-size: 50px;
 }
 
-.tip {
+#tipSucc {
     position: absolute;
     top: 100px;
-    left: 200px;
-    right: 200px;
+    left: 150px;
+    right: 600px;
     background-color: gold;
     display: block;
     font-size: 30px;
 }
 
+#tipStud {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    right: 600px;
+    background-color: gold;
+    display: block;
+    font-size: 30px;
+}
+
+#tipPers {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    right: 600px;
+    background-color: gold;
+    display: block;
+    font-size: 30px;
+}
+
+#tipRand {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    right: 600px;
+    background-color: gold;
+    display: block;
+    font-size: 30px;
+}
 
 
 

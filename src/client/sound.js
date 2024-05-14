@@ -111,55 +111,12 @@ prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 
 // Available song buttons
-songButton1.addEventListener('click', () => {
-    loadSong(songs[0]);
-    playSong();
-})
-
-songButton2.addEventListener('click', () => {
-    loadSong(songs[1]);
-    playSong();
-})
-
-songButton3.addEventListener('click', () => {
-    loadSong(songs[2]);
-    playSong();
-})
-
-songButton4.addEventListener('click', () => {
-    loadSong(songs[3]);
-    playSong();
-})
-
-songButton5.addEventListener('click', () => {
-    loadSong(songs[4]);
-    playSong();
-})
-
-songButton6.addEventListener('click', () => {
-    loadSong(songs[5]);
-    playSong();
-})
-
-songButton7.addEventListener('click', () => {
-    loadSong(songs[6]);
-    playSong();
-})
-
-songButton8.addEventListener('click', () => {
-    loadSong(songs[7]);
-    playSong();
-})
-
-songButton9.addEventListener('click', () => {
-    loadSong(songs[8]);
-    playSong();
-})
-
-songButton10.addEventListener('click', () => {
-    loadSong(songs[9]);
-    playSong();
-})
+songButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        loadSong(songs[index]);
+        playSong();
+    });
+});
 
 //Shop functions and event listeners
 shopButton.addEventListener("click", function() {

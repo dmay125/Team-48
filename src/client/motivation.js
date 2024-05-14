@@ -47,18 +47,6 @@ students_menu.style.display = "none";
 personalLife_menu.style.display = "none";
 random_menu.style.display = "none";
 
-// <!-- a frontend where you type the diary entries
-
-//           a database to store the diary entries in
-          
-//           a backend that receives the entries from the frontend and puts them in said database
-          
-//           the backend must also be able to fetch the correct diary entry based on id or date or name
-          
-//           another frontend to display the diary entries -->
-
-//document.getElementById("tip").innerText = "";
-
 success_button.addEventListener("click", function() {
     const tip = succTips[Math.floor(Math.random() * succTips.length)];
     document.getElementById("tipSucc").innerText = tip;

@@ -20,9 +20,6 @@ const closePopup = shopPopup.querySelector(".close");
 const buyButtons = document.querySelectorAll('.buy-button-sound');
 const dropletCount = document.getElementById('shopDropletCount');
 const noDropletsCloseButton = document.getElementById('noDropletsClose');
-const button1 = document.getElementById("buyButton_1");
-const button2 = document.getElementById("buyButton_2");
-const button3 = document.getElementById("buyButton_3");
 const sampleButtons = document.querySelectorAll('.sample-button');
 
 const progress = document.getElementById('progress');
@@ -212,7 +209,7 @@ sampleButtons.forEach(button => {
 });
 
 //Songs in the shop
-const shopSongs = ['softer-love', 'relaxing-piano', 'playing-in-color'];
+const shopSongs = ['softer-love', 'relaxing-piano', 'playing-in-color', 'ambient-classical-guitar', 'weeknds', 'ask'];
 
 // Function to create a new button for the song
 function createSongButton(songName) {

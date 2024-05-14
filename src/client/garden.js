@@ -1,3 +1,4 @@
+import {updateCurrency} from './script.js'
 //PouchDB
 const db = new PouchDB('garden-db');
 //Retrieving elements 
@@ -316,9 +317,10 @@ redButton.addEventListener("click", function() {
       // Show warning popup
       shownoMoneyWarning();
   } else {
-    water.querySelector(".count").textContent --; // Update count in inventory popup
+    //water.querySelector(".count").textContent --; // Update count in inventory popup
     redItem.querySelector(".count").textContent++;
-    document.getElementById('storeDropletCount').textContent--;
+    //document.getElementById('storeDropletCount').textContent--;
+    updateCurrency(-1);
 }});
 orangeButton.addEventListener("click", function() {
   const wateritemCount = water.querySelector(".count");
@@ -328,9 +330,10 @@ orangeButton.addEventListener("click", function() {
       // Show warning popup
       shownoMoneyWarning();
   } else {
-    water.querySelector(".count").textContent --; // Update count in inventory popup
+    //water.querySelector(".count").textContent --; // Update count in inventory popup
     orangeItem.querySelector(".count").textContent++;
-    document.getElementById('storeDropletCount').textContent--;
+    //document.getElementById('storeDropletCount').textContent--;
+    updateCurrency(-1);
 }});
 yellowButton.addEventListener("click", function() {
   const wateritemCount = water.querySelector(".count");
@@ -340,9 +343,10 @@ yellowButton.addEventListener("click", function() {
       // Show warning popup
       shownoMoneyWarning();
   } else {
-    water.querySelector(".count").textContent --; // Update count in inventory popup
+    //water.querySelector(".count").textContent --; // Update count in inventory popup
     yellowItem.querySelector(".count").textContent++;
-    document.getElementById('storeDropletCount').textContent--;
+    //document.getElementById('storeDropletCount').textContent--;
+    updateCurrency(-1);
 }});
 blueButton.addEventListener("click", function() {
   const wateritemCount = water.querySelector(".count");
@@ -352,9 +356,10 @@ blueButton.addEventListener("click", function() {
       // Show warning popup
       shownoMoneyWarning();
   } else {
-    water.querySelector(".count").textContent --; // Update count in inventory popup
+    //water.querySelector(".count").textContent --; // Update count in inventory popup
     blueItem.querySelector(".count").textContent++;
-    document.getElementById('storeDropletCount').textContent--;
+    //document.getElementById('storeDropletCount').textContent--;
+    updateCurrency(-1);
 }});
 purpleButton.addEventListener("click", function() {
   const wateritemCount = water.querySelector(".count");
@@ -364,9 +369,10 @@ purpleButton.addEventListener("click", function() {
       // Show warning popup
       shownoMoneyWarning();
   } else {
-    water.querySelector(".count").textContent --; // Update count in inventory popup
+    //water.querySelector(".count").textContent --; // Update count in inventory popup
     purpleItem.querySelector(".count").textContent++;
-    document.getElementById('storeDropletCount').textContent--;
+    //document.getElementById('storeDropletCount').textContent--;
+    updateCurrency(-1);
 }});
 pinkButton.addEventListener("click", function() {
   const wateritemCount = water.querySelector(".count");
@@ -376,9 +382,10 @@ pinkButton.addEventListener("click", function() {
       // Show warning popup
       shownoMoneyWarning();
   } else {
-    water.querySelector(".count").textContent --; // Update count in inventory popup
+    //water.querySelector(".count").textContent --; // Update count in inventory popup
     pinkItem.querySelector(".count").textContent++;
-    document.getElementById('storeDropletCount').textContent--;
+    //document.getElementById('storeDropletCount').textContent--;
+    updateCurrency(-1);
 }});
 //Help Functions
 helpButton.addEventListener("click", function() {

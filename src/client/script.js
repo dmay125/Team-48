@@ -1,5 +1,3 @@
-//Pouch DB
-
 
 //Setting up the Pages
 let garden_button = document.getElementById("garden");
@@ -62,4 +60,19 @@ home_button.addEventListener("click", ()=>{
     home_page.hidden = false;
 })
 
+export function updateCurrency(num) {
+    // Get all elements with the class 'currency'
 
+    const currencyElements = document.getElementsByClassName('currency');
+
+    // Loop through all elements with the class 'currency'
+    for (let i = 0; i < currencyElements.length; i++) {
+        // Get the current value as an integer
+        let currentValue = parseInt(currencyElements[i].textContent);
+        // Update the value based on the num parameter
+        currentValue += num;
+        // Set the text content to the updated value
+        currencyElements[i].textContent = currentValue;
+    }
+
+}

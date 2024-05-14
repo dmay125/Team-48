@@ -1,3 +1,5 @@
+import {updateCurrency} from './script.js'
+
 // Initialize PouchDB
 const db = new PouchDB('journal');
 
@@ -98,6 +100,7 @@ butterflyBtn.addEventListener("click", function() {
   });
 closeButterflyPopup.addEventListener("click", function() {
     butterflyPopup.style.display = "none";
+    updateCurrency(1);
 });
 
 slideBtn.addEventListener("click", function() {
@@ -108,6 +111,7 @@ slideBtn.addEventListener("click", function() {
   });
   closeSlidePopup.addEventListener("click", function() {
     slidePopup.style.display = "none";
+    updateCurrency(1);
 });
 
 waterBtn.addEventListener("click", function() {
@@ -118,6 +122,7 @@ waterBtn.addEventListener("click", function() {
   });
   closeRiverPopup.addEventListener("click", function() {
     riverPopup.style.display = "none";
+    updateCurrency(1);
 });
 
 flowerBtn.addEventListener("click", function() {
@@ -128,6 +133,7 @@ flowerBtn.addEventListener("click", function() {
   });
   closeSmellFlowersPopup.addEventListener("click", function() {
     smellFlowersPopup.style.display = "none";
+    updateCurrency(1);
 });
 
   

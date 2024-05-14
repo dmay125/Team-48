@@ -1,3 +1,5 @@
+import {updateCurrency} from './script.js'
+
 const musicContainer = document.querySelector('.music-container');
 const searchInput = document.querySelector('.search input');
 const songTitle = document.getElementById('song-title');
@@ -190,7 +192,8 @@ buyButtons.forEach((button, index) => {
         // Decrease droplet count by 1
         const currentCount = parseInt(dropletCount.textContent);
         if (currentCount > 0) {
-            dropletCount.textContent = currentCount - 1;
+            //dropletCount.textContent = currentCount - 1;
+            updateCurrency(-1);
             // Remove the bought song from the shop
             shopSongs.splice(index, 1);
 

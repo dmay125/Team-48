@@ -240,16 +240,6 @@
             </div>
           </div>
 
-          <!-- a frontend where you type the diary entries
-
-          a database to store the diary entries in
-          
-          a backend that receives the entries from the frontend and puts them in said database
-          
-          the backend must also be able to fetch the correct diary entry based on id or date or name
-          
-          another frontend to display the diary entries -->
-
           <div id="slide-popup" class="park-popup">
             <div class="park-popup-content">
               <span class="park-close">&times;</span>
@@ -266,7 +256,7 @@
               <button onclick="saveEntry()">Save Entry</button>
               <div id="entries"></div>
           
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/pouchdb/7.2.2/pouchdb.min.js"></script>
+              <script src="parkbackend.js"></script>
               <script src="park.js"></script>
             
             </div>
@@ -289,22 +279,7 @@
             </div>
           </div>
 
-         
 
-
-
-         <!-- Settings Popup -->
-         <!-- <div id="settingsPopup" class="popup">
-          <div class="popup-content">
-            <span class="close">&times;</span>
-            <h2>Settings</h2>
-            <label for="gardenName">Garden Name:</label>
-            <input type="text" id="gardenNameInput" placeholder="Enter new name">
-            <button id="changeNameButton">Change Name</button>
-            <button id="resetButton">Reset Garden</button>
-          </div>
-       </div>     -->
-          <!-- </div> -->
               
           
         </div>

@@ -6,3 +6,8 @@ use currency in the form of water droplets to purchase flowers and plant them in
 have a positivity park where users can visit different locations in the park to be tasked with various activities to earn water droplets.
 We have a motivation menu with helpful tips whenever one needs a little something extra to keep them motivated. Our final page is a serene
 sound center where users can play relaxing lofi beats that play accross the different sections of the browser. 
+
+
+Milestone 3:
+
+To run the application type the command "npm run milestone-03". Our application has several web pages user can navigate accross. Within the positivity park we encorporated a journal users can add entries to. We created a database that stores entry information and used back end to manage the jounral entries.

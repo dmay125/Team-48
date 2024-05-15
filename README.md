@@ -10,4 +10,4 @@ sound center where users can play relaxing lofi beats that play accross the diff
 
 Milestone 3:
 
-npm run milestone-03
+To run the application type the command "npm run milestone-03". Our application has several web pages user can navigate accross. Within the positivity park we encorporated a journal users can add entries to. We created a database that stores entry information and used back end to manage the jounral entries.

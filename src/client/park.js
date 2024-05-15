@@ -1,5 +1,3 @@
-import {updateCurrency} from './script.js'
-
 // Initialize PouchDB
 const db = new PouchDB('journal');
 
@@ -91,6 +89,23 @@ const smellFlowersPopup = document.getElementById("smellFlowers-popup");
 const closeSmellFlowersPopup = smellFlowersPopup.querySelector(".park-close");
 
 const jounralEntry = document.getElementById('word');
+
+function updateCurrency(num) {
+    // Get all elements with the class 'currency'
+
+    const currencyElements = document.getElementsByClassName('currency');
+
+    // Loop through all elements with the class 'currency'
+    for (let i = 0; i < currencyElements.length; i++) {
+        // Get the current value as an integer
+        let currentValue = parseInt(currencyElements[i].textContent);
+        // Update the value based on the num parameter
+        currentValue += num;
+        // Set the text content to the updated value
+        currencyElements[i].textContent = currentValue;
+    }
+
+}
 
 butterflyBtn.addEventListener("click", function() {
     butterflyPopup.style.display = "block";

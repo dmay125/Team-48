@@ -50,24 +50,14 @@ function pauseSong() {
     audio.pause();
 }
 
-function prevSong() {
-    songIndex--;
-
-    if(songIndex < 0) {
-        songIndex = songs.length - 1;
-    }
-
+function prevSong(index) {
+    songIndex = (index - 1 + songs.length) % songs.length;
     loadSong(songs[songIndex]);
     playSong();
 }
 
-function nextSong() {
-    songIndex++;
-
-    if(songIndex > songs.length - 1) {
-        songIndex = 0;
-    }
-
+function nextSong(index) {
+    songIndex = (index + 1) % songs.length;
     loadSong(songs[songIndex]);
     playSong();
 }
@@ -108,14 +98,20 @@ playBtn.addEventListener('click', () => {
     }
 })
 
-prevBtn.addEventListener('click', prevSong);
-nextBtn.addEventListener('click', nextSong);
+prevBtn.addEventListener('click', () => {
+    prevSong(songIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+    nextSong(songIndex);
+});
 
 // Available song buttons
 songButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
         loadSong(songs[index-1]);
         playSong();
+        songIndex = index-1;
     });
 });
 

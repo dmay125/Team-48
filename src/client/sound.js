@@ -62,23 +62,30 @@ function nextSong(index) {
     playSong();
 }
 
-// Event Listeners
-searchInput.addEventListener('input', () => {
++searchInput.addEventListener('input', () => {
     const searched = searchInput.value.toLowerCase().trim();
 
     songButtons.forEach(button => {
         const buttonText = button.innerText.toLowerCase().trim();
+        let match = true;
+
+        for (let i = 0; i < searched.length; i++) {
+            // Check if the letter at index i in the search input matches
+            // the letter at the same index in the button text
+            if (searched[i] !== buttonText[i]) {
+                match = false;
+                break; // Exit the loop if a mismatch is found
+            }
+        }
         
-        // Check if the button text includes the search input
-        if (buttonText.includes(searched)) {
+        // Show or hide the button based on whether it matches the search input
+        if (match) {
             button.style.display = 'block';
         } else {
             button.style.display = 'none';
         }
     });
 });
-
-
 
 playBtn.addEventListener('click', () => {
     const isPlaying = musicContainer.classList.contains('play');

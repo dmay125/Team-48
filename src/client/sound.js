@@ -13,8 +13,6 @@ const dropletCount = document.getElementById('shopDropletCount');
 const noDropletsCloseButton = document.getElementById('noDropletsClose');
 const sampleButtons = document.querySelectorAll('.sample-button');
 
-const progressBar = document.getElementById('progress');
-const progressContainer = document.querySelector('.progress-container');
 const audio = document.getElementById('audio');
 const songCover = document.getElementById('cover');
 const prevBtn = document.getElementById('prev');

@@ -102,7 +102,7 @@ nextBtn.addEventListener('click', nextSong);
 // Available song buttons
 songButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        loadSong(songs[index]);
+        loadSong(songs[index-1]);
         playSong();
     });
 });

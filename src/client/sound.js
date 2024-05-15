@@ -3,18 +3,7 @@ import {updateCurrency} from './script.js'
 const musicContainer = document.querySelector('.music-container');
 const searchInput = document.querySelector('.search input');
 const songTitle = document.getElementById('song-title');
-
 const songButtons = document.querySelectorAll('.avail-songs button');
-const songButton1 = document.querySelector('.song-1');
-const songButton2 = document.querySelector('.song-2');
-const songButton3 = document.querySelector('.song-3');
-const songButton4 = document.querySelector('.song-4');
-const songButton5 = document.querySelector('.song-5');
-const songButton6 = document.querySelector('.song-6');
-const songButton7 = document.querySelector('.song-7');
-const songButton8 = document.querySelector('.song-8');
-const songButton9 = document.querySelector('.song-9');
-const songButton10 = document.querySelector('.song-10');
 
 const shopButton = document.querySelector('.song-shop');
 const shopPopup = document.getElementById("shopPopup");
@@ -24,7 +13,7 @@ const dropletCount = document.getElementById('shopDropletCount');
 const noDropletsCloseButton = document.getElementById('noDropletsClose');
 const sampleButtons = document.querySelectorAll('.sample-button');
 
-const progress = document.getElementById('progress');
+const progressBar = document.getElementById('progress');
 const progressContainer = document.querySelector('.progress-container');
 const audio = document.getElementById('audio');
 const songCover = document.getElementById('cover');

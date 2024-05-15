@@ -68,24 +68,16 @@ searchInput.addEventListener('input', () => {
 
     songButtons.forEach(button => {
         const buttonText = button.innerText.toLowerCase().trim();
-        let match = true;
-
-        // Check if each character in the search input matches the corresponding character in the button text
-        for (let i = 0; i < searched.length; i++) {
-            if (searched[i] !== buttonText[i]) {
-                match = false;
-                break; // Break the loop if a mismatch is found
-            }
-        }
-
-        // Show or hide the button based on the match result
-        if (match) {
+        
+        // Check if the button text includes the search input
+        if (buttonText.includes(searched)) {
             button.style.display = 'block';
         } else {
             button.style.display = 'none';
         }
     });
 });
+
 
 
 playBtn.addEventListener('click', () => {
